@@ -86,7 +86,29 @@ h2:nth-child(2) {
     display: flex;
     flex-direction: row;
     list-style: none;
+    padding: 0;
+    justify-content: center;
 }
+
+.fb, .tw, .ig {
+    display: block;
+}
+
+.fb {
+    background: url(/assets/img/facebook-f.svg);
+    padding: 8px 2px 8px 8px;
+}
+
+.tw {
+    background: url(/assets/img/twitter.svg);
+    padding: 8px;
+}
+
+.ig {
+    background: url(/assets/img/instagram.svg);
+    padding: 8px 6.9px 8px 8px;
+}
+
 /* Footer Signature */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: var(--White); }
