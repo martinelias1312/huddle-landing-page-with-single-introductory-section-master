@@ -1,15 +1,92 @@
 /* -- General Settings -- */
 :root {
     --Violet: hsl(257, 40%, 49%);
-    --Soft-Magenta: hsl(300, 69%, 71%);
+    --Soft-Magenta-active: hsl(300, 69%, 71%);
+    --White: #fff;
     --Body-font: 'Open Sans', sans-serif;
     --Headings-font: 'Poppins', sans-serif;
 }
 
+body {
+    line-height: 1.6;
+    background: var(--Violet) url(/assets/img/bg-mobile.svg) no-repeat;
+}
 
+header, main, footer {
+    margin: 2.2em;
+}
 
+/* -- Header -- */
+header {
+    margin-bottom: 3em;
+}
+
+.logo {
+    max-width: 45%;
+}
+
+/* Heading */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* -- Main -- */
+/* Mockup */
+.mockups-img {
+    max-width: 100%;
+}
+
+/* Article */
+.introduction {
+    text-align: center;
+    color: var(--White);
+    font-family: var(--Body-font);
+}
+
+h2 {
+    font-family: var(--Headings-font);
+}
+
+h2:first-child {
+    margin: 2em 0 0 0;
+}
+
+h2:nth-child(2) {
+    margin: 0;
+}
+
+.main-p {
+    margin-bottom: 2.5em;
+}
+
+.btn-reg {
+    color: var(--Violet);
+    text-decoration: none;
+    background: var(--White);
+    border-radius: 2em;
+    padding: 1em 5em;
+}
+
+.btn-reg:hover, .btn-reg:focus {
+    color: var(--White);
+    background: var(--Soft-Magenta-active);
+}
 
 /* -- Footer -- */
+/* Footer socials */
+.socials {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
 /* Footer Signature */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
