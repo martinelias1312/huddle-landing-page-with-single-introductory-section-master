@@ -155,7 +155,12 @@ h2:nth-child(2) {
     }
 }
 
-@media screen and ( min-width: 1450px ) {
+@media screen and ( min-width: 1441px ) {
+    body {
+        background-size: contain;
+        height: 100vh;
+    }
+    
     footer {
         display: flex;
         flex-direction: row;
