@@ -82,31 +82,27 @@ h2:nth-child(2) {
 
 /* -- Footer -- */
 /* Footer socials */
-.socials {
+.fa-ul {
     display: flex;
     flex-direction: row;
-    list-style: none;
     padding: 0;
     justify-content: center;
+    margin: 3em 0 0 0;
 }
 
-.fb, .tw, .ig {
+.fa-li {
+    left: 0;
+}
+
+.fa-li:nth-child(2) {
+    margin: 0 1em;
+}
+
+.fa-li a {
     display: block;
-}
-
-.fb {
-    background: url(/assets/img/facebook-f.svg);
-    padding: 8px 2px 8px 8px;
-}
-
-.tw {
-    background: url(/assets/img/twitter.svg);
-    padding: 8px;
-}
-
-.ig {
-    background: url(/assets/img/instagram.svg);
-    padding: 8px 6.9px 8px 8px;
+    color: var(--White);
+    border: 1px var(--White) solid;
+    border-radius: 50%;
 }
 
 /* Footer Signature */
