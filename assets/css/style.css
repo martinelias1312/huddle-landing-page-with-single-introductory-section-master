@@ -10,7 +10,6 @@
 body {
     line-height: 1.6;
     background: var(--Violet) url(/assets/img/bg-mobile.svg) no-repeat;
-    max-width: 100%;
 }
 
 header, main, footer {
@@ -65,7 +64,7 @@ h2:nth-child(2) {
 }
 
 .main-p {
-    margin-bottom: 2.5em;
+    margin-bottom: 3.5em;
 }
 
 .btn-reg {
@@ -112,5 +111,54 @@ h2:nth-child(2) {
 }
 
 /* Footer Signature */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: var(--White); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: var(--White); 
+}
+
+/* -- Media Queries -- */
+@media screen and ( min-width: 376px ) {
+    body {
+        background: var(--Violet) url(/assets/img/bg-desktop.svg) no-repeat;
+    }    
+}
+
+@media screen and ( min-width: 785px ) {
+    .mockups-div {
+        max-width: 60%;
+    }
+    
+    .introduction {
+        max-width: 37%;
+        margin-left: 3em;
+        text-align: left;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fa-ul {
+        justify-content: right;
+        margin-right: 3em;
+    }
+}
+
+@media screen and ( min-width: 900px ) {   
+    .introduction {
+        max-width: 34%;
+        margin-left: 4em;
+    }
+}
+
+@media screen and ( min-width: 1450px ) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+}
