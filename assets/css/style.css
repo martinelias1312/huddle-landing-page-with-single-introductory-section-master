@@ -10,6 +10,7 @@
 body {
     line-height: 1.6;
     background: var(--Violet) url(/assets/img/bg-mobile.svg) no-repeat;
+    max-width: 100%;
 }
 
 header, main, footer {
@@ -103,6 +104,11 @@ h2:nth-child(2) {
     color: var(--White);
     border: 1px var(--White) solid;
     border-radius: 50%;
+}
+
+.fa-li a:hover, .fa-li:focus {
+    border: 1px solid var(--Soft-Magenta-active);
+    color: var(--Soft-Magenta-active);    
 }
 
 /* Footer Signature */
